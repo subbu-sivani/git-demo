@@ -122,6 +122,18 @@ The local repository means the commit is saved in your .git folder, not yet in a
 
 
 
+============================================================================================================================================================
+
+Need to Read:-
+-------------
+
+Branch
+git pull
+git fetch
+git merge
+git restore ---------etc
+
+
 
 
 
