@@ -1,0 +1,128 @@
+#!/bin/bash
+echo "test mail"
+
+
+
+Git init:- (Creating local repository ) 
+---------
+
+Initializing the current folder as git local repository to start tracking changes 
+
+by default It creates a hidden .git folder inside your project, which stores:
+
+1.Commit history
+2.Branches
+3.Configuration
+4.Staging information
+
+
+Note:- TO push the or pull the code from local to remote and remote to local , just add remote repo to local repo 
+
+
+Add a remote repository to your local repository:-(Linking)
+-------------------------------------------------
+
+git remote add origin https://github.com/username/repo.git
+Verify it’s added
+git remote -v
+
+
+NOTE:- 
+=====
+local repository lives on your computer.
+Remote repository lives somewhere else (e.g., GitHub, GitLab, Bitbucket).
+
+So to 
+
+Push your commits from local → remote (so others can see or collaborate).
+Pull changes from remote → local (to keep your local copy updated).
+
+Just add a remote repository to local 
+
+
+Without a remote, Git only tracks your project locally — it won’t sync with GitHub or anywhere else.
+It’s like having a diary at home vs. publishing it online so colleagues can read it.
+
+
+Origin:-
+-------
+origin is just a nickname (an alias) for the URL of your remote repository.
+
+
+
+
+
+
+git add :-
+--------
+
+Take untracked files from working directory and move changes to the staging area .
+It just moves the untracked file changes into a staging area (a waiting room).
+
+git add <files>
+
+
+
+
+git commit:-
+----------
+
+Saves changes from the staging area into the local repository history (inside the hidden .git folder).
+
+When you commit, Git stores your history inside the hidden .git folder at the root of your repo.
+
+git commit -m "comment"
+
+
+git push :-
+---------
+
+Sends commits from the local repository to the remote repository (e.g., GitHub).
+sends local commits (from your local repository) to a remote repository (like GitHub, GitLab, or Bitbucket).
+
+It checks for authentication, types of authentication
+
+1. Through Key-pair
+2. github access with username and password .
+
+Working Directory --(git add)--> Staging Area --(git commit)--> Local Repo --(git push)--> Remote Repo
+
+
+
+.git folder
+----------
+
+It is a Git’s local database.
+It contains everything: commits, branches, tags, configuration, etc.
+
+
+
+
+Working directory:-
+------------------
+
+It is a place where all the untracked changes present
+
+Staging area:-
+--------------
+
+It is a place where all tracked files changes present before storing permanently in local repository .
+
+
+
+
+NOTE:-
+-----
+
+Files don’t actually “move” physically — Git just records their state in different internal places.
+The local repository means the commit is saved in your .git folder, not yet in any remote repo.
+
+
+
+
+
+
+
+
+
+
