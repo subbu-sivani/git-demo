@@ -1,8 +1,9 @@
 #!/bin/bash
 echo "test mail"
 
-Hello
-Hi
+
+hello Hi
+
 
 Git init:- (Creating local repository ) 
 ---------
